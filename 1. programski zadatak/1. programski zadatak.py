@@ -1,7 +1,5 @@
 from datetime import date
-godina= 2023
-mjesec= 4
-dan= 18
+
 
 korisnik = {}
 
@@ -17,7 +15,9 @@ artikl["Opis"] =input("Unesite opis artikla:")
 artikl["Cijena €"]=float(input("Unesite cijenu artikla u eurima:"))
 
 prodaja = {}
-
+dan=int(input("Upišite dan završetka prodaje: "))
+mjesec=int(input("Upišite mjesec završetka prodaje: "))
+godina=int(input("Upišite godinu završetka prodaje: "))
 prodaja["Datum"]=date(godina, mjesec, dan)
 prodaja["Korisnik"]=korisnik
 prodaja["Artikl"]=artikl
